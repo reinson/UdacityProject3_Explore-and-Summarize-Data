@@ -2,6 +2,17 @@ Tormi Reinon
 
 ========================================================
 
+# Introduction
+
+The red wines data set contains information on 1599 red wines. The goal of my analysis was to understand what physicochemical properties determine the quality of a wine. It turned out that there is no single property or a compound that determines the quality of a wine. However, some factors, like alcohol percent and volatile acidity were moderately correlated with wine quality. 
+
+# Reflection
+
+I struggled most with multivariate analysis, since the correlations were rather low and it was difficult for me to make meaningful and clear plots showing how two properties affect wine quality. I overcame this problem by generating heat maps of average quality by splitting two variables into bins based on quantile values. This analysis is not ideal because it is affected by certain level of randomness, especially when the number of bins is high and number of items falling into each bin is low. 
+
+For future analysis it would be interesting to see whether there are certain combinations of characteristics that specify a high quality wine. Machine learning and preferably a larger data set are probably necessary for this task.  
+
+
 ```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
 
 # Notice that the parameter "echo" was set to FALSE for this code chunk.
@@ -487,13 +498,6 @@ There is no single very good indicator of wine quality. Alcohol and volatile aci
 
 ------
 
-# Reflection
-
-The red wines data set contains information on 1599 red wines. The goal of my analysis was to understand what physicochemical properties determine the quality of a wine. It turned out that there is no single property or a compound that determines the quality of a wine. However, some factors, like alcohol percent and volatile acidity were moderately correlated with wine quality. 
-
-I struggled most with multivariate analysis, since the correlations were rather low and it was difficult for me to make meaningful and clear plots showing how two properties affect wine quality. I overcame this problem by generating heat maps of average quality by splitting two variables into bins based on quantile values. This analysis is not ideal because it is affected by certain level of randomness, especially when the number of bins is high and number of items falling into each bin is low. 
-
-For future analysis it would be interesting to see whether there are certain combinations of characteristics that specify a high quality wine. Machine learning and preferably a larger data set are probably necessary for this task.  
 
 
 
